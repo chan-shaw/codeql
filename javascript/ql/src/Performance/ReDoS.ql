@@ -119,7 +119,7 @@ newtype TStatePair =
     isFork(q1, _, _, _, _) and q2 = q1
     or
     step(_, _, _, q1, q2) and
-    q1.toString() <= q2.toString()
+    q1.getRepr().toString() <= q2.getRepr().toString()
   }
 
 class StatePair extends TStatePair {
